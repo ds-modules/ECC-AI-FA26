@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Hands-On AI Notebooks</title>
-<meta name="description" content="Five interactive notebooks that teach core AI ideas by letting you change things and watch what happens. They run in a browser on JupyterHub or Google Colab.">
+<meta name="description" content="Six interactive notebooks that teach core AI ideas by letting you change things and watch what happens. They run in a browser on JupyterHub or Google Colab.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Fraunces:opsz,wght@9..144,500;9..144,700&display=swap" rel="stylesheet">
@@ -168,7 +168,7 @@
     <div>
       <p class="eyebrow">Interactive notebooks &middot; Intro to AI</p>
       <h1>Learn how AI works by changing it and watching what happens.</h1>
-      <p class="lede">Five hands-on notebooks that turn ideas like temperature, clustering, neural networks and model evaluation into sliders, buttons and short decisions. Run them in your browser, with nothing to install by hand.</p>
+      <p class="lede">Six hands-on notebooks that turn ideas like temperature, context, clustering, neural networks and model evaluation into sliders, buttons and short decisions. Run them in your browser, with nothing to install by hand.</p>
       <p class="byline">Built by <b>SzuLun (Zoey) Huang</b>, UC Berkeley Data Science, under the guidance of <b>Eric Van Dusen</b>.</p>
     </div>
     <!-- three sliders: the "change a setting, see a result" idea -->
@@ -257,6 +257,16 @@
     },
     {
       n: "02",
+      title: "LLM Context Management",
+      file: "LLM_Context_Management_and_Dynamic_Prompts.ipynb",
+      blurb: "Follow a developer building an AI study assistant that has to adapt to students at different levels. Find out why a model forgets, how system prompts shape its behavior, and what to do when a conversation gets too long.",
+      topics: ["System prompts", "Context windows", "Memory and tokens"],
+      platforms: ["JupyterHub"],
+      note: "This one loads a language-model file from the shared Hub folder, so it is set up for JupyterHub.",
+      noColab: true
+    },
+    {
+      n: "03",
       title: "Building a Movie Recommender",
       file: "ML_Concepts_Matching_Game_Movie_Recommender.ipynb",
       blurb: "Sort out how AI, machine learning, deep learning and LLMs relate with a matching game, then build a small recommender that finds similar movies.",
@@ -265,7 +275,7 @@
       time: "About 30 minutes (up to 45 with extensions)"
     },
     {
-      n: "03",
+      n: "04",
       title: "Deep Learning Map Explorer",
       file: "DL_Elements_Map_Explorer.ipynb",
       blurb: "Find out when traditional machine learning is not enough. See how a neural network learns, walk an interactive decision map of model families, and try a tiny convolution demo.",
@@ -274,7 +284,7 @@
       time: "30–45 minutes for the core path"
     },
     {
-      n: "04",
+      n: "05",
       title: "NLP Map Explorer",
       file: "NLP_Map_Explorer.ipynb",
       blurb: "Decide when simple rules are enough and when you need a language model. Follow text from tokens to embeddings to transformers, then watch a small model predict the next word.",
@@ -284,7 +294,7 @@
       noColab: true
     },
     {
-      n: "05",
+      n: "06",
       title: "AI Project Lifecycle Lab",
       file: "AI_Project_Lifecycle_Interactive_Lab.ipynb",
       blurb: "Walk through a whole AI project, from problem to deployment, for a newspaper trying to predict which articles go viral. Tune thresholds and see what precision and recall really trade off.",
