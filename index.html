@@ -77,6 +77,15 @@
   .byline b { color: var(--ink); font-weight: 700; }
   .hero svg { width: 100%; height: auto; max-width: 360px; justify-self: center; }
 
+
+  /* ---------- banner image ---------- */
+  .banner { margin: 0; border-bottom: 1px solid var(--line); background: var(--warm); }
+  .banner img {
+    display: block; width: 100%;
+    height: clamp(140px, 22vw, 260px);
+    object-fit: cover; object-position: center;
+  }
+
   /* ---------- sections ---------- */
   section { padding: 48px 0 8px; }
   h2 {
@@ -191,6 +200,11 @@
     </svg>
   </div>
 </header>
+
+<figure class="banner">
+  <img src="hero-banner.jpg" width="2000" height="500"
+       alt="A robotic hand and a human hand reaching toward each other across a starry sky, painted in the style of a Renaissance fresco.">
+</figure>
 
 <main class="wrap">
 
