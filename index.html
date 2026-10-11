@@ -177,7 +177,7 @@
     <div>
       <p class="eyebrow">Interactive notebooks &middot; Intro to AI</p>
       <h1>Learn how AI works by changing it and watching what happens.</h1>
-      <p class="lede">Six hands-on notebooks that turn ideas like temperature, context, clustering, neural networks and model evaluation into sliders, buttons and short decisions. Run them in your browser, with nothing to install by hand.</p>
+      <p class="lede">Six hands-on notebooks that turn ideas like temperature, memory, similarity, neural networks and model evaluation into sliders, buttons and short decisions. Run them in your browser, with nothing to install by hand.</p>
       <p class="byline">Built by <b>SzuLun (Zoey) Huang</b>, UC Berkeley Data Science, under the guidance of <b>Eric Van Dusen</b>.</p>
     </div>
     <!-- three sliders: the "change a setting, see a result" idea -->
@@ -251,7 +251,7 @@
 
 <script>
   // ---- Edit these if the repository or file names change -------------------
-  const CONFIG = { owner: "szuh326", repo: "REPO_NAME", branch: "main" };
+  const CONFIG = { owner: "szulun", repo: "ai-notebooks", branch: "main" };
   // On GitHub Pages (https://OWNER.github.io/REPO/) owner and repo are detected automatically.
   if (location.hostname.endsWith(".github.io")) {
     CONFIG.owner = location.hostname.split(".")[0];
@@ -262,8 +262,8 @@
   const NOTEBOOKS = [
     {
       n: "01",
-      title: "Personal Writing Assistant",
-      file: "Personal_Writing_Assistant_Duo.ipynb",
+      title: "Write with AI: Prompts, Settings, and Your Own Style",
+      file: "Write_with_AI.ipynb",
       blurb: "Meet a small language model that runs on its own. Give it a persona, change settings such as temperature, compare what it writes, and check your understanding along the way.",
       topics: ["Small language models", "Temperature", "Prompts and personas"],
       platforms: ["JupyterHub", "Colab"],
@@ -271,18 +271,17 @@
     },
     {
       n: "02",
-      title: "LLM Context Management",
-      file: "LLM_Context_Management_and_Dynamic_Prompts.ipynb",
+      title: "Why Does AI Forget? Building a Chat Assistant with Memory",
+      file: "Why_Does_AI_Forget.ipynb",
       blurb: "Follow a developer building an AI study assistant that has to adapt to students at different levels. Find out why a model forgets, how system prompts shape its behavior, and what to do when a conversation gets too long.",
       topics: ["System prompts", "Context windows", "Memory and tokens"],
-      platforms: ["JupyterHub"],
-      note: "This one loads a language-model file from the shared Hub folder, so it is set up for JupyterHub.",
-      noColab: true
+      platforms: ["JupyterHub", "Colab"],
+      note: "On Colab, the first run installs one package and downloads the language model (about 0.8 GB), roughly 3–5 minutes."
     },
     {
       n: "03",
-      title: "Building a Movie Recommender",
-      file: "ML_Concepts_Matching_Game_Movie_Recommender.ipynb",
+      title: "How Does a Recommender Know What's “Similar”?",
+      file: "How_Does_a_Recommender_Work.ipynb",
       blurb: "Sort out how AI, machine learning, deep learning and LLMs relate with a matching game, then build a small recommender that finds similar movies.",
       topics: ["AI vs ML vs DL", "Clustering", "Similarity"],
       platforms: ["JupyterHub", "Colab"],
@@ -290,8 +289,8 @@
     },
     {
       n: "04",
-      title: "Deep Learning Map Explorer",
-      file: "DL_Elements_Map_Explorer.ipynb",
+      title: "Choosing the Right Model: Machine Learning vs. Deep Learning",
+      file: "Choosing_the_Right_Model.ipynb",
       blurb: "Find out when traditional machine learning is not enough. See how a neural network learns, walk an interactive decision map of model families, and try a tiny convolution demo.",
       topics: ["Neural networks", "Model families", "Convolution"],
       platforms: ["JupyterHub", "Colab"],
@@ -299,18 +298,17 @@
     },
     {
       n: "05",
-      title: "NLP Map Explorer",
-      file: "NLP_Map_Explorer.ipynb",
+      title: "How Do Language Models Work? From Words to Answers",
+      file: "How_Do_Language_Models_Work.ipynb",
       blurb: "Decide when simple rules are enough and when you need a language model. Follow text from tokens to embeddings to transformers, then watch a small model predict the next word.",
       topics: ["Tokenization", "Transformers", "RAG", "Sentiment and NER"],
-      platforms: ["JupyterHub"],
-      note: "This one needs a language-model file, so it is set up for JupyterHub.",
-      noColab: true
+      platforms: ["JupyterHub", "Colab"],
+      note: "On Colab, the first run installs one package and downloads the language model (about 0.8 GB), roughly 3–5 minutes."
     },
     {
       n: "06",
-      title: "AI Project Lifecycle Lab",
-      file: "AI_Project_Lifecycle_Interactive_Lab.ipynb",
+      title: "From Idea to Launch: Running an AI Project",
+      file: "From_Idea_to_Launch.ipynb",
       blurb: "Walk through a whole AI project, from problem to deployment, for a newspaper trying to predict which articles go viral. Tune thresholds and see what precision and recall really trade off.",
       topics: ["Problem scoping", "Overfitting", "Precision and recall", "Deployment"],
       platforms: ["JupyterHub", "Colab"]
